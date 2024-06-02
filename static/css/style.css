@@ -1,0 +1,143 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background: url("/images/games-background.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label, input, button {
+    margin: 5px;
+}
+
+.monster-selection-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.monster-selection img {
+    width: 50px; /* Defina a largura desejada para as imagens dos monstros */
+    height: auto; /* Mantenha a altura proporcional à largura */
+}
+
+.monster-selection {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 2px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cell.player-1 {
+    background-color: lightblue;
+}
+
+/* style.css */
+.your-turn {
+    border: 2px solid rgb(254, 254, 254);
+}
+
+.game-board.your-turn .cell {
+    outline: 2px solid rgb(255, 255, 255); /* Destaque todas as células no turno do jogador */
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 40px; /* Centraliza o texto verticalmente */
+    cursor: pointer; /* Adiciona um cursor de ponteiro para indicar interatividade */
+}
+
+
+.cell.occupied {
+    background-color: lightblue;
+}
+
+.monster-your-turn {
+    border: 2px solid gold; /* Ou qualquer estilo que você preferir */
+}
+
+.player {
+    display: inline-block;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+
+.cell.player-2 {
+    background-color: lightcoral;
+}
+.form {
+    background-color: #15172b;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 500px;
+    padding: 20px;
+    width: 320px;
+  }
+h1{
+    color: aliceblue;
+}
+
+.form{
+    background-color: aliceblue;
+}
+.label{
+    color:white
+}
+.playerName{
+    color:white;
+
+}
+
+.submit {
+    background-color: #08d;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+     /* outline: 0; */
+    text-align: center;
+    width: 100%;
+  }
+  
+  .submit:active {
+    background-color: #06b;
+  }
