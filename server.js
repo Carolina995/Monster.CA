@@ -15,3 +15,7 @@ app.set('views', path.join(__dirname, 'templates', 'views'));
 // Middleware for parsing URL-encoded bodies and serving static files
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'static')));
+
+// Import and use router for handling routes
+const indexRouter = require('./routes/route');
+app.use('/', indexRouter);
