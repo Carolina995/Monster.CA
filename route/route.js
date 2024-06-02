@@ -10,9 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const message = { type: 'startGame', payload: { gameId, playerName } };
         socket.send(JSON.stringify(message));
     };
-
-     // When a message is received from the server
-     socket.onmessage = (event) => {
+    
+    // When a message is received from the server
+    socket.onmessage = (event) => {
         const message = JSON.parse(event.data);
         console.log('Received message from server:', message);
 
@@ -36,8 +36,9 @@ document.addEventListener('DOMContentLoaded', () => {
             updateGameStats(message.payload.totalGamesPlayed, message.payload.playerStats);
         }
     };
-      // Update game statistics in the UI
-      function updateGameStats(totalGamesPlayed, playerStats) {
+
+    // Update game statistics in the UI
+    function updateGameStats(totalGamesPlayed, playerStats) {
         document.getElementById('total-games-played').innerText = totalGamesPlayed;
 
         const playerStatsList = document.getElementById('player-stats');

@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('Connection closed');
     };
 });
+
 function startGame() {
     const playerName = document.getElementById('playerName').value;
     const invitationCode = document.getElementById('invitationCode').value;
