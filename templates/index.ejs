@@ -7,5 +7,15 @@
     <link rel="stylesheet" href="css/style.css">   
 </head>
 <body>
+    <h1>Welcome to Monster Mayhem</h1>
+    <form action="/game" method="POST">
+        <label class="playerName" for="playerName">Type Your Name:</label>
+        <input type="text" id="playerName" name="playerName" required>
+        
+        <label class="playerName" for="invitationCode">Invitation Code (optional):</label>
+        <input type="text" id="invitationCode" name="invitationCode">
+        
+        <button class="submit" type="submit">Start a Game</button>
+    </form>
 </body>
 </html>

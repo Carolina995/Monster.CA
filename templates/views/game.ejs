@@ -7,6 +7,23 @@
     <link rel="stylesheet" href="css/style.css">   
 </head>
 <body>
+    <div class="container">
+        <h1 class="h1">MONSTER MAYHEM</h1>
+        <h1>Game N*: <%= gameId %></h1>
+        <h2>Gamer Name: <%= playerName %></h2>
+        
+        <!-- Score -->
+        <div class="h1" id="scoreboard"> Game Score 
+            <div class="h1" id="player1-score">Player 1: 0 monsters</div>
+            <div class="h1" id="player2-score">Player 2: 0 monsters</div>
+        </div>
+        
+        <div id="monster-selection" class="monster-selection-container">
+            <div class="monster-selection" data-monster-type="🧛🏿"><img src="/images/vampire.png" alt="Vampire"></div>
+            <div class="monster-selection" data-monster-type="👻"><img src="/images/ghost.png" alt="Ghost"></div>
+            <div class="monster-selection" data-monster-type="🐺"><img src="/images/werewolf.png" alt="Werewolf"></div> 
+        </div>
+        <div id="game-board" class="game-board"></div>
 
 </body>
 </html>
