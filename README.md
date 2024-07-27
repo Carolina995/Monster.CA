@@ -30,6 +30,6 @@ cam decide in their round which monster to play
 - CSS
 - EJS
 
-  ## 📖 Developer
+  ##  Developer 📖
 
  [<img src="https://avatars.githubusercontent.com/u/83533485?v=4" width=115><br><sub>Carolina Gomes Landim</sub>](https://github.com/Carolina995)
