@@ -17,7 +17,7 @@ cam decide in their round which monster to play
 - A monster can move any numbers of the square horizontally, vertically or up to two square diagonally
 - PLayers can move their onw monsters
 
-### Combat 🏅
+#### Combat 🏅
 - Vampire X Werewolf = Vampire win
 - Werewolf X Ghost = Werewolf win
 - Ghost X Vampire = Ghost Win
